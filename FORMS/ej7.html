@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej7</title>
+</head>
+<body>
+   <script>
+    function convertor(){
+        let grad= parseInt(document.fgrados.entrada.value);
+        let conversion= (grad * 9/5) + 32;
+        document.getElementById("dos").innerHTML=conversion;
+    }
+   </script> 
+
+   <form name="fgrados">
+    Introduce la cantidad de Celsius que quieres convertir a Fatenheit: 
+    <input type="text" name="entrada" oninput="convertor()">
+   </form>
+
+   <h2 id="dos"></h2>
+</body>
+</html>

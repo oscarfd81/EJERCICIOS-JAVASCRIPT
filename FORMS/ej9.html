@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej9</title>
+    <style>
+        body{
+            background-color: #d7dadafb;
+        }
+        h1{
+            font-family: sans-serif;
+        }
+        input{
+            background-color: rgb(205, 205, 93);
+        }
+        button{
+            background-color: rgb(181, 178, 175);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function nota(){
+            let nota= parseInt(document.fnotas.nota1.value);
+            let nota2= parseInt(document.fnotas.nota2.value);
+            let porcentaje= parseInt(document.fnotas.porcentaje1.value);
+            let porcentaje2= parseInt(document.fnotas.porcentaje2.value);
+
+            let calculo= (nota * porcentaje/100)+(nota2* porcentaje2/100);
+
+            document.getElementById("potato").innerHTML="La nota final sería de un "+calculo;
+        }
+
+    </script>
+
+    <h1>Calculo de Notas</h1>
+
+    <form name="fnotas">
+        Nota: <input type="text" name="nota1" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Porcentaje: <input type="text" name="porcentaje1" size="2">
+        <br><br>
+        Nota: <input type="text" name="nota2"
+        size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Porcentaje: <input type="text" name="porcentaje2" size="2">
+        <br><br>
+       <button onclick="nota()">Calcular</button>
+    </form>
+
+    <p id="potato"></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej6</title>
+</head>
+<body>
+    <script>
+        function calcula(){
+            let numero = document.fdatos.entrada.value;
+            let num = parseInt(numero);
+
+            let dato = document.getElementById("lista");
+            let valor = dato.options[dato.selectedIndex].value;
+
+            let resultado = num * valor;
+            document.getElementById("salida").innerHTML = resultado;
+        }
+    </script>
+
+    <form name="fdatos">
+        Introduce un número: 
+        <input type="text" size="10" name="entrada">
+        <b> X</b>
+        <select id="lista" onchange="calcula()">
+            <option value=1 selected>uno</option>
+            <option value=2>dos</option>
+            <option value=3>tres</option>
+            <option value=4>cuatro</option>
+        </select>
+        <br><br>
+     
+
+        <p id="salida"></p>
+    </form>
+</body>
+</html>

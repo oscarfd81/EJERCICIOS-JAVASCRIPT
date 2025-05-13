@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej5</title>
+</head>
+<body>
+    <script>
+        function ProcesoDatos(){
+            let resul= document.getElementById("RangoValor").value;
+            document.getElementById("resultado").innerHTML=resul;
+        }
+    </script>
+
+    <h3>Entrada de datos por Slide</h3>
+    <input type="range" id="RangoValor" value="50" onchange="ProcesoDatos()">
+    <p id="resultado"></p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej10</title>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+</head>
+<body>
+    <script>
+        var getEventTime= function(){
+            var start= moment(document.getElementById("start").value);
+            var end= moment(document.getElementById("end").value);
+            console.log(moment.duration(end.diff(start)).asDays());
+        }
+    </script>
+    <form>
+        <input type="date" id="start" onchange="getEventTime()">
+        <input type="date" id="end" onchange="getEventTime()">
+    </form>
+</body>
+</html>

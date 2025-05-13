@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej4.2</title>
+</head>
+<body>
+    <script>
+        function cuadrado(){
+            let num1= document.fnum.entrada.value;
+            let num= parseInt(num1);
+            let calc= Math.pow(num,2);
+            document.write(calc + "</br>");
+        }
+
+        function cubo(){
+            let num1= document.fnum.entrada.value;
+            let num= parseInt(num1);
+            let calc= Math.pow(num,3);
+            document.write(calc + "</br>");
+        }
+    </script>
+
+    <form action="text" name="fnum">
+        Introduzca el número:
+        <input type="text" name="entrada">
+    </form>
+    <br>
+    <input type="button" value="PULSE AQUI" onclick="cuadrado()">
+    <br><br>
+    <input type="button" value="PULSE AQUI"
+    onclick="cubo()">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej4</title>
+</head>
+<body>
+    <script>
+        function elevacion(){
+            let num1=document.fnumero.entrada.value;
+            let num=parseInt(num1);
+            let calc= Math.pow(num,2);
+            let calc2= Math.pow(num,3);
+            document.write("<h1>El número elevado al cuadrado es igual a "+calc+ "</h1>");
+            document.write("<h1>El número elevadp añ cubo es igual a "+calc2+ "</h1>");
+        }
+    </script>
+
+    <form action="text" name="fnumero">
+        <p>Escribe el número que quieras elevar:</p>
+        <input type="text" name="entrada" b>
+    </form>
+    <br><br>
+        <input type="button" value="PULSE AQUÍ PARA REALIZAR EL CALCULO" onclick="elevacion()">
+</body>
+</html>
