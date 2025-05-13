@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej5</title>
+</head>
+<body>
+    <h1 id="lol"></h1>
+    <script>
+        let obj=document.getElementById("lol");
+
+        let azar= (Math.random()*6);
+        let dado = parseInt(azar)+1;
+
+        if ( dado> 3){
+            obj.innerHTML= "Has ganado, ha salido el número "+dado;
+        }else{
+            obj.innerHTML= "Has fallado, ha salido el número "+ dado;
+        }
+    </script>
+</body>
+</html>

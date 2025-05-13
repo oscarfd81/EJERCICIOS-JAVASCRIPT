@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej11</title>
+</head>
+<body>
+    <script>
+        let origen= prompt("Escribe tu origen");
+        let destino= prompt("Escribe tu destino");
+
+        origen= origen.toUpperCase();
+        destino= destino.toUpperCase();
+
+        if((origen== "PALMA")&&(destino== "BARCELONA")){
+            document.write("El descuento es de un 5%");
+        }else if ((origen=="PALMA")&&(destino=="MADRID")){
+            document.write("El descuento es de un 10% ");
+        }else if ((origen=="PALMA")&&(destino=="VALENCIA")){
+            document.write("El descuento es de un 15%")
+        }
+
+    </script>
+</body>
+</html>

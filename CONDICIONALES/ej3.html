@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej3</title>
+</head>
+<body>
+    <script>
+        var nota1= window.prompt("Dime tu nota");
+        var nota2= window.prompt("Dime tu nota");
+        var nota3= window.prompt("Dime tu nota");
+
+        var nota1=parseInt(nota1);
+        var nota2=parseInt(nota2);
+        var nota3=parseInt(nota3);
+
+        var media= (nota1+ nota2 + nota3)/3;
+
+        if (media >5){
+            var resultado="Has suspendido";
+        }else{
+            var resultado="Has aprobado";
+        }
+
+        document.write(resultado + "</br> Tu nota media es de un "+ media);
+    </script>
+</body>
+</html>

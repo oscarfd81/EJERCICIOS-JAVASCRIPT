@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej7</title>
+</head>
+<body>
+    <script>
+        let edad, estudio;
+        edad=window.prompt("Cuantos años tienes?");
+        estudio= window.prompt("Que estudias?");
+
+        estudio = estudio.toUpperCase();
+
+        if((edad>18)&&(estudio=="FP")){
+            document.write("<h1>Bienvenid@</h1>")
+        }else if((edad<=18)&&(estudio=="FP")){
+            document.write("<h1>NO TIENES ACCESO AL PORTAL WEB</h1>")
+        }
+        
+    </script>
+</body>
+</html>

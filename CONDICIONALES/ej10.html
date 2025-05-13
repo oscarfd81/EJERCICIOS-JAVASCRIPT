@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej10</title>
+</head>
+<body>
+    <script>
+        let edad;
+        edad=prompt("Cuantos años tienes?")
+
+        while((edad<1)||(edad>120)){
+            edad= prompt("Introduzca una edad válida")
+        }
+
+        if(edad>18){
+            document.writeln("<h1>Acceso otorgado </h1>")
+        } else{
+            document.writeln("<h1>Acceso denegado </h1>")
+        }
+    </script>
+</body>
+</html>

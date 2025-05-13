@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej6</title>
+</head>
+<body>
+    <h1 class="popo"></h1>
+    <script>
+        let marca= prompt("De que marca es el coche que deseas?");
+        let modelo= prompt("Que modelo deseas?");
+        var desc;
+
+        if((marca=="ford")&&(modelo=="fiesta")){
+             desc= "5%";
+        }
+
+        if((marca=="ford")&&(modelo=="focus")){
+             desc="10%";
+        }
+
+        let elemento= document.querySelector(".popo");
+
+        elemento.innerHTML="Tienes un descuento del "+desc;
+    </script>
+</body>
+</html>

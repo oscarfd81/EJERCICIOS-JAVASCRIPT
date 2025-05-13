@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej13</title>
+</head>
+<body>
+    <script>   
+    let edad, final;
+    edad = window.prompt("edad?", "0");
+
+    if (isNaN(edad)) {
+        final = "Error. No es un número";
+    } else {
+        final = (edad < 18) ? "Demasiado joven" : "Mayor de edad";
+    }
+    document.write(final);
+</script>
+</body>
+</html>
